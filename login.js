@@ -16,3 +16,4 @@ document.addEventListener("DOMContentLoaded", e => {
         createAccountForm.classList.add("form-hidden");
     });
 });
+

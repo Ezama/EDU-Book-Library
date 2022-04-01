@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Login">
+    <meta name="keywords" content="EDU Book Library Login">
+    <meta name="author" content="EDU">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDU Book Library Login/Signup</title>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/2b33ca07dd.js" crossorigin="anonymous"></script>
+    <!--bootswatch-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--normal css-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--login page-->
+    <div class="container mt-4" id="login">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-primary"></i> EDU<span class="text-primary"> Book</span> Library
+        </h1>
+        <p class="display-6 text-primary text-center">Sign In</p>
+        <form>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputText3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Title</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Student
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            LF
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                        <label class="form-check-label" for="gridRadios3">
+                            Staff member
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary">Sign in</button>
+
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Sign up</a>
+            </p>
+        </form>
+    </div>
+
+    <!--signup page-->
+    <div class="container mt-4 form-hidden" id="createAccount">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-primary"></i> EDU<span class="text-primary"> Book</span> Library
+        </h1>
+        <p class="display-6 text-primary text-center">Sign Up</p>
+        <form>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputText3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Title</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Student
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            LF
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                        <label class="form-check-label" for="gridRadios3">
+                            Staff member
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary">Sign up</button>
+
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="library.js"></script>
+</body>
+
+</html>
